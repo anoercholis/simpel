@@ -8,4 +8,5 @@ Route::get('/', function () {
 });
 
 
-Route::get('/surat', [SuratController::class, 'daftarSurat']);
+// Route::get('/surat', [SuratController::class, 'daftarSurat']);
+Route::resource('surat', SuratController::class );
